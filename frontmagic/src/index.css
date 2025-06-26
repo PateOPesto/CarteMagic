@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    vertical-align: top;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#top-bar {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+#filter-bar {
+  position: sticky;
+  margin-top: 8px;
+  top: 100px; /* = hauteur de #top-bar */
+  background: #f0f0f0;
+  padding: 10px;
+  z-index: 100;
+}
+
+#top-bar span {
+    margin-right: 15px;
+}
+
+.card {
+    position: relative;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    vertical-align: top;
+    background: #fff;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.card.booster-true {
+    border: 2px solid limegreen;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.booster-badge {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: limegreen;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75em;
+    padding: 4px 6px;
+    border-radius: 6px;
+    z-index: 2;
+    font-family: sans-serif;
+}

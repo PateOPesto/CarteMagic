@@ -2,3 +2,4 @@ cartes_selectionnees.json
 .idea
 .venv
 node_module
+MagicCardList/__pycache__/
