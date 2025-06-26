@@ -1,1 +1,4 @@
 cartes_selectionnees.json
+.idea
+.venv
+node_module
