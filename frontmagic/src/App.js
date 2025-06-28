@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import CardList from "./components/CardList";
+import Header from "./components/Header"; //
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <div className="App">
-      <h1>Ma collection Magic</h1>
-      <CardList />
+    <div className={`App ${darkMode ? "dark" : ""}`}>
+      <Header darkMode={darkMode} toggleTheme={() => setDarkMode(prev => !prev)} />
+      <CardList darkMode={darkMode} />
     </div>
   );
 }
